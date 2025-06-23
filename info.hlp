@@ -1,0 +1,52 @@
+Screwdriver - Command Reference
+===============================
+
+Modes:
+	- NORMAL: Type commands in the terminal.
+	- VIEW: Move around the scene using the keyboard.
+
+Controls:
+	- Press 'V' to enter VIEW mode.
+	- Press 'ESC' to return to NORMAL mode.
+	- Use WASD to move in 2D grid view.
+	- Hold SHIFT to move faster.
+	- Use '-' and '=' to zoom out/in.
+
+Commands:
+---------
+	help
+		Show the contents of info.hlp
+
+	quit
+		Exit the program.
+
+	fps_max [n]
+		Set maximum FPS limit (0 = unlimited).
+
+	show_fps [0/1]
+		Toggle FPS counter display.
+
+	bg_enable [0/1]
+		Enable or disable background color.
+
+	bg_color [r] [g] [b]
+		Set background color (RGB values 0-255).
+
+	font_size [n]
+		Change the size of the displayed font.
+
+	zoom [fovy]
+		Set the camera zoom level (5.0 - 200.0).
+
+screw.cfg
+---------
+	At startup, the program reads commands from screw.cfg automatically.
+
+Example screw.cfg:
+------------------
+	show_fps 1
+	font_size 24
+	bg_enable 1
+	bg_color 20 20 30
+	fps_max 0
+	zoom 100.0
