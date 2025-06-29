@@ -21,3 +21,16 @@ DEPENDENCIES
     * C compiler (gcc, clang, etc.)
 
     * make
+
+*******************************************************************
+Make sure you create the "build" directory
+
+To compile:
+	$ meson setup buildir
+	$ meson compile -C build
+
+To install:
+	# meson install -C build
+
+To clean:
+	$ ninja -C build clean
