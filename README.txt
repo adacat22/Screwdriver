@@ -26,7 +26,7 @@ DEPENDENCIES
 Make sure you create the "build" directory
 
 To compile:
-	$ meson setup buildir
+	$ meson setup build
 	$ meson compile -C build
 
 To install:
